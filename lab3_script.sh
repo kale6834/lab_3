@@ -15,10 +15,10 @@ grep $regEx $fileName
 grep -c '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}' regex_practice.txt
 
 #4.4.1
-grep -c "@" regex_practice.txt
+egrep -c "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9.-]+\b" regex_practice.txt 
 
 #4.4.2
 egrep '303-[0-9]{3}-[0-9]{4}' regex_practice.txt
 
 #4.4.3
-grep "@geocities.com" regex_practice.txt >> email_results.txt
+egrep -c "\b[a-zA-Z0-9.-]+@geocities.com+\b" regex_practice.txt >> email_results.txt
