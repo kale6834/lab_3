@@ -12,7 +12,7 @@ read regEx
 grep $regEx $fileName
 
 #4.3
-grep -c '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}' regex_practice.txt
+egrep -c '(([0-9]{3})|[0-9]{3})-[0-9]{3}-[0-9]{4}' regex_practice.txt
 
 #4.4.1
 egrep -c "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9.-]+\b" regex_practice.txt 
