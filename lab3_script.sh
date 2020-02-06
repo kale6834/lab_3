@@ -18,4 +18,4 @@ grep -c '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}' regex_pra
 grep -e '303-' regex_practice.txt
 
 #3
-grep "@geocities.com" regex_practice.txt
+grep "@geocities.com" regex_practice.txt >> email_results.txt
